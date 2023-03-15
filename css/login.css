@@ -1,0 +1,120 @@
+/* Body ------------------------------------------------------------- */
+
+body {
+  background-color: var(--color-background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Title ------------------------------------------------------------- */
+
+.title {
+  font-size: var(--font-size-title);
+  background: var(--color-text-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hd {
+  background: var(--color-text-gradient);
+  height: var(--horizontal-div-height);
+  width: var(--horizontal-div-width);
+  margin: 1vw 0px 5vw 0px;
+}
+
+/* FORM ------------------------------------------------------------- */
+
+.login-container {
+  background: var(--color-text-gradient);
+  padding: 1px;
+  border-radius: var(--border-radius);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-form-background);
+  width: fit-content;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+form * {
+  color: #FFF;
+  font-weight: 5;
+  font-size: var(--font-size-form);
+}
+
+form input {
+  margin: 0.5vw;
+  box-sizing: border-box;
+  width: var(--form-input-width);
+  height: var(--form-input-height);
+  border-radius: var(--border-radius);
+  border: none;
+}
+
+form > div {
+  width: 100%;
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid #AAA;
+}
+
+.form-button {
+  background-color: var(--color-text);
+  box-shadow: 0px 0px 5px #000;
+  transition: background-color 0.25s;
+}
+
+.form-button:hover {
+  background-color: var(--color-button-hover);
+}
+
+.form-text {
+  padding: 0px 1vw;
+  background: var(--color-text-gradient);
+  box-shadow: 0px 0px 5px inset #000;
+}
+
+/* SPINNER ------------------------------------------------------------- */
+.spinner {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   height:60px;
+   width:60px;
+   margin:0px auto;
+   -webkit-animation: rotation .6s infinite linear;
+   -moz-animation: rotation .6s infinite linear;
+   -o-animation: rotation .6s infinite linear;
+   animation: rotation .6s infinite linear;
+   border-left:6px solid rgba(0,174,239,.15);
+   border-right:6px solid rgba(0,174,239,.15);
+   border-bottom:6px solid rgba(0,174,239,.15);
+   border-top:6px solid rgba(0,174,239,.8);
+   border-radius:100%;
+}
+
+@-webkit-keyframes rotation {
+   from {-webkit-transform: rotate(0deg);}
+   to {-webkit-transform: rotate(359deg);}
+}
+@-moz-keyframes rotation {
+   from {-moz-transform: rotate(0deg);}
+   to {-moz-transform: rotate(359deg);}
+}
+@-o-keyframes rotation {
+   from {-o-transform: rotate(0deg);}
+   to {-o-transform: rotate(359deg);}
+}
+@keyframes rotation {
+   from {transform: rotate(0deg);}
+   to {transform: rotate(359deg);}
+}

@@ -1,0 +1,102 @@
+/* Logo ------------------------------------------------------------- */
+.logo {
+  inline-size: -webkit-fill-available;
+  display: flex;
+  padding: 3em;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo > img {
+  width: 28px;
+  border: outset;
+  height: 28px;
+  overflow: visible;
+  border-radius: 32%;
+  padding: 1vh;
+  background-color: #1b1b1b;
+  border-block-color: var(--color-text);
+  border-block-end-color: var(--color-text);
+  border-inline-end-color: var(--color-text);
+  border-left-color: var(--color-text);
+}
+
+/* Body ------------------------------------------------------------- */
+
+body {
+  #background-color: var(--color-background);
+  background-color: var(--color-text);
+  #min-height: 100vh;
+  display: flex;
+}
+
+.sidebar {
+  background: var(--color-background);
+  padding: 0.5em;
+}
+
+.nav-top,
+.nav-bottom {
+  width: -webkit-fill-available;
+  padding: 1vw 0;
+}
+
+.nav-top > div {
+  font-size: var(--font-size-nav-title);
+  background: var(--color-text);
+  text-align: center;
+  justify-content: space-evenly;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-top > p {
+  background-color: #1b1b1b;
+  #border: solid;
+  border-radius: var(--border-radius);
+  margin: 0.5vw;
+  padding: 0.5vw;
+  text-align: center;
+  font-size: var(--font-size-action);
+  transition: background-color 0.25s;
+}
+
+#logout:hover {
+  background-color: #F00811;
+  color: #1b1b1b;
+}
+
+.nav-top > p:hover {
+  background-color: #44e992;
+  color: #1b1b1b;
+}
+
+.nav-bottom > a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: block;
+  text-align: center;
+  font-size: var(--font-size-action-link);
+  color: #1b1b1b;
+}
+
+.main {
+  background-color: var(--watermelon);
+  #width: 84vw;
+  width: 1vw;
+  height: 100vh;
+}
+/* Iframes ------------------------------------------------------------- */
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+.content > iframe { 
+  margin-left: 25vw;
+  display: block;
+}
+
+/* Sidenav*/

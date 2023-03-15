@@ -1,0 +1,48 @@
+/* MAIN ------------------------------------------------------------- */
+
+:root {
+
+  /* Colors */
+  --trust-blue: #10529f;
+  --watermelon: #CA2849;
+  --color-text: #44e992;
+  --color-form-text: #44e99244;
+  --color-button-hover: #8df1bd;
+  --color-background: #1B1B1B;
+  --color-accent-01: #fd00b0;
+  --color-accent-02: #FADF00;
+  --color-form-background: #222;
+  --color-text-gradient: linear-gradient(77deg, rgba(254,59,118,1) 9%, rgba(175,41,206,1) 50%, rgba(41,49,221,1) 90%);
+    --color-text-gradient-hover: linear-gradient(77deg, rgba(254,59,118,1) 35%, rgba(175,41,206,1) 50%, rgba(41,49,221,1) 63%);
+
+  /* Sizing */
+  --font-size-title: 5vw;
+  --font-size-form: 1vw;
+  --font-size-action: 1vw;
+  --font-size-action-link: 1vw;
+  --font-size-nav-title: 2.5vw;
+  --horizontal-div-height: 0.5vw;
+  --horizontal-div-width: 10vw;
+  --form-input-height: 2.5vw;
+  --form-input-width: 15vw;
+  --border-radius: 0.5vw;
+  
+}
+
+::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  color: var(--color-text);
+  user-select: none;
+  outline: none;
+  font-family: "IBM Plex Sans", "Roboto", system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  @apply text-white bg-zinc-800 antialiased;
+  overflow: hidden;
+}
